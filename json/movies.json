@@ -1,0 +1,40 @@
+{
+    "title" : "Full list of recommended movies",
+    "content" : [
+        {
+            "title" : "Single All the Way",
+            "director" : "Michael Mayer",
+            "description" : "Desperate to avoid his family's judgment about his perpetual single status, Peter (Michael Urie) convinces his best friend Nick (Philemon Chambers) to join him for the holidays and pretend that they're now in a relationship. But when Peter's mother (Kathy Najimy) sets him up on a blind date with her handsome trainer James (Luke Macfarlane) the plan goes awry.",
+            "link" : "https://www.imdb.com/title/tt14315756/",
+            "tags" : ["geo.US"]
+        },
+        {
+            "title" : "The Holiday",
+            "directory" : "Nancy Meyers",
+            "description" : "Dumped and depressed, English rose Iris agrees to swap homes with similarly unlucky in love Californian Amanda for a much-needed break. Iris finds herself in a palatial Hollywood mansion while Amanda navigates the lanes of a picture-perfect English village. Soon enough, both lovelorn ladies bump into local lads perfect for a romantic pick-me-up.",
+            "link" : "https://www.imdb.com/title/tt0457939/",
+            "tags" : ["geo.US", "geo.abroad"]
+        },
+        {
+            "title" : "The Family Stone",
+            "director" : "Thomas Bezucha",
+            "description" : "The plot follows the Christmas holiday misadventures of the Stone family in a small New England town when the eldest son brings his uptight girlfriend home with the intention of proposing to her with a cherished heirloom ring. Overwhelmed by the hostile reception, she begs her sister to join her for emotional support, which triggers further complications.",
+            "link" : "https://www.imdb.com/title/tt0356680/",
+            "tags" : ["geo.US"]
+        },
+        {
+            "title" : "Love Actually",
+            "director" : "Richard Curtis",
+            "description" : "Nine intertwined stories examine the complexities of the one emotion that connects us all: love.",
+            "link" : "https://www.imdb.com/title/tt0314331/",
+            "tags" : ["geo.abroad"]
+        },
+        {
+            "title" : "The Holiday Calendar",
+            "director" : "Bradley Walsh",
+            "description" : "A struggling but talented photographer inherits an antique holiday advent calendar, the contents of which seem to predict the future. Will this magical calendar lead her to love this holiday season?",
+            "link" : "https://www.imdb.com/title/tt8262802/",
+            "tags" : ["geo.US"]
+        }
+    ]
+}
