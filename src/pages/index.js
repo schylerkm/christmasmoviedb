@@ -73,7 +73,7 @@ const IndexPage = () => {
         <div>
           <Button
             name="santaButtons"
-            value="Santa"
+            value="Santa 🎅"
             id="santa.yes"
             className={Styles.button}
             onClick={buttonPressed}
