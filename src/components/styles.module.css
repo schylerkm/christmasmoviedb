@@ -10,6 +10,7 @@
     padding: 16px 24px;
     text-align: center;
     font-size:calc(10px + 0.5vw);
+    margin-bottom: 30px;
 }
 .button-selected {
     color: #f1dfdf;
@@ -23,6 +24,7 @@
     font-size:calc(10 px + 0.5vw);
     border: 2px solid;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
 .heading {
     margin-top: 0;
@@ -49,6 +51,14 @@
 .movie-description{
     font-size:16;
 }
+.recommendation {
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: none;
+    clear: both;
+    padding: 2rem;
+}
 .recommendation-header{
     color: #222222;
     font-weight: bold;
@@ -59,4 +69,7 @@
 .recommendation-body{
     color: #222222;
     display: none;
+}
+.page{
+    min-height: calc(100vh - 90px);
 }

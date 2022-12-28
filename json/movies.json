@@ -32,7 +32,7 @@
         "director" : "Bradley Walsh",
         "description" : "A struggling but talented photographer inherits an antique holiday advent calendar, the contents of which seem to predict the future. Will this magical calendar lead her to love this holiday season?",
         "link" : "https://www.imdb.com/title/tt8262802/",
-        "tags" : ["geo.fake"]
+        "tags" : ["geo.US"]
     },
     {
         "title" : "Last Holiday",
@@ -47,5 +47,12 @@
         "description": "Raised as an oversized elf, Buddy travels from the North Pole to New York City to meet his biological father, Walter Hobbs, who doesn't know he exists and is in desperate need of some Christmas spirit.",
         "link": "https://www.imdb.com/title/tt0319343/",
         "tags": ["geo.US", "mood.funny", "santa.yes"]
+    },
+    {
+        "title": "Home Alone",
+        "director": "Chris Columbus",
+        "description": "When 8-year-old Kevin McCallister acts out the night before a family trip to Paris, his mother makes him sleep in the attic. After the McCallisters mistakenly leave for the airport without Kevin, he awakens to an empty house and assumes his wish to have no family has come true. But his excitement sours when he realizes that two con men plan to rob the McCallister residence, and that he alone must protect the family home.",
+        "link": "https://www.imdb.com/title/tt0099785/",
+        "tags": ["geo.US", "mood.funny", "santa.no"]
     }
 ]
