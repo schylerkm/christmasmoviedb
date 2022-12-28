@@ -38,6 +38,8 @@
 }
 
 .footer-item{
-    list-style:none;
-    font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    clear: both;
 }

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Button from '../components/button'
 import * as Styles from '../components/styles.module.css'
@@ -30,7 +30,6 @@ const IndexPage = () => {
         </div>
         <div id="quiz">
           <div className={Styles.quizQuestion}>Pick a location: </div>
-          <br />
           <div>
             <Button
               name="geoButtons"
@@ -47,9 +46,7 @@ const IndexPage = () => {
               onClick={buttonPressed}
             />
           </div>
-          <br />
           <div className={Styles.quizQuestion}>Pick a mood: </div>
-          <br />
           <div>
             <Button
               name="moodButtons"
@@ -68,9 +65,7 @@ const IndexPage = () => {
               onClick={buttonPressed}
             />
           </div>
-          <br />
           <div className={Styles.quizQuestion}>Santa or no Santa? </div>
-          <br />
           <div>
             <Button
               name="santaButtons"
@@ -90,9 +85,6 @@ const IndexPage = () => {
             />
           </div>
         </div>
-        {/* <div id="test" className={Styles.recommendation}>
-          Hello, World!
-        </div> */}
         <div id="recommendation" className={Styles.recommendation}>
           <div id="recommendationHeader" className={Styles.recommendationHeader}>
             You should check out:
@@ -100,6 +92,7 @@ const IndexPage = () => {
           <div className={Styles.recommendationBody} id="recommendationBody">
             <div id="movieTitle" className={Styles.movieTitle}></div>
             <div id="movieDescription" className={Styles.movieDescription}></div>
+            <div id="movieLink" className={Styles.movieLink}></div>
           </div>
         </div>
       </div>
