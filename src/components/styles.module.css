@@ -27,8 +27,8 @@
     margin-bottom: 16px;
 }
 .heading {
-    margin-top: 0;
-    margin-bottom: 64;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-family: sans-serif;
 }
 .heading-accent {
@@ -46,11 +46,13 @@
   }
 .movie-title{
     color: #dc5555;
-    font-size: 30;
+    font-size: 20;
     font-weight: bold;
+    font-family: sans-serif;
 }
 .movie-description{
-    font-size:16;
+    font-size: 10;
+    font-family: sans-serif;
 }
 .recommendation {
     margin-top: 30px;
@@ -63,13 +65,11 @@
 .recommendation-header{
     color: #222222;
     font-weight: bold;
-    font-size: 30;
+    font-size: 20;
+    font-family: sans-serif;
     display: none;
     clear: both;
-}
-.recommendation-body{
-    color: #222222;
-    display: none;
+    padding-bottom: 10px;
 }
 .page{
     min-height: calc(100vh - 90px);

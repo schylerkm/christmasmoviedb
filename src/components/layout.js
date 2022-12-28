@@ -26,7 +26,7 @@ export default function Layout({ children }) {
                         </Link>
                     </li>
                     <li className={navLinkItem}>
-                        <Link to="/">
+                        <Link to="/info">
                             <StaticImage
                                 className={navImage}
                                 alt="A black info button"

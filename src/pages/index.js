@@ -45,6 +45,13 @@ const IndexPage = () => {
               className={Styles.button}
               onClick={buttonPressed}
             />
+            <Button
+              name="geoButtons"
+              value="North Pole"
+              id="geo.northpole"
+              className={Styles.button}
+              onClick={buttonPressed}
+            />
           </div>
           <div className={Styles.quizQuestion}>Pick a mood: </div>
           <div>
@@ -55,12 +62,17 @@ const IndexPage = () => {
               className={Styles.button}
               onClick={buttonPressed}
             />
-          </div>
-          <div>
             <Button
               name="moodButtons"
               value="Emotional"
               id="mood.emotional"
+              className={Styles.button}
+              onClick={buttonPressed}
+            />
+            <Button
+              name="moodButtons"
+              value="Romantic"
+              id="mood.romantic"
               className={Styles.button}
               onClick={buttonPressed}
             />
@@ -74,8 +86,6 @@ const IndexPage = () => {
               className={Styles.button}
               onClick={buttonPressed}
             />
-          </div>
-          <div>
             <Button
               name="santaButtons"
               value="No Santa"
@@ -89,11 +99,9 @@ const IndexPage = () => {
           <div id="recommendationHeader" className={Styles.recommendationHeader}>
             You should check out:
           </div>
-          <div className={Styles.recommendationBody} id="recommendationBody">
-            <div id="movieTitle" className={Styles.movieTitle}></div>
-            <div id="movieDescription" className={Styles.movieDescription}></div>
-            <div id="movieLink" className={Styles.movieLink}></div>
-          </div>
+          <div id="movieTitle" className={Styles.movieTitle}></div>
+          <div id="movieDescription" className={Styles.movieDescription}></div>
+          <div id="movieLink" className={Styles.movieLink}></div>
         </div>
       </div>
     </Layout>
@@ -170,28 +178,33 @@ function selectionsComplete() {
 
 function generateRecommendation() {
   var selectedTags = [selectedGeo, selectedMood, selectedSanta];
+  var titleDiv = document.getElementById("movieTitle");
+  var descriptionDiv = document.getElementById("movieDescription");
+  var recDiv = document.getElementById("recommendation");
+  var recHeaderDiv = document.getElementById("recommendationHeader");
 
   var filteredMovies = movieData.filter((movie) => 
     selectedTags.every((t) => movie.tags.includes(t))
   );
 
   if (filteredMovies.length === 0) {
+    titleDiv.innerHTML = "Sorry, your selections didn't generate a movie result. Please refresh and try again";
+    descriptionDiv.innerHTML = "";
+    recDiv.style.display="block";
+    recHeaderDiv.style.display = "block";
+    titleDiv.style.display="block";
     return;
   }
 
   recommendation = filteredMovies[Math.floor(Math.random() * filteredMovies.length)];
-  var titleDiv = document.getElementById("movieTitle");
-  var descriptionDiv = document.getElementById("movieDescription");
-  var recDiv = document.getElementById("recommendation");
-  var recHeaderDiv = document.getElementById("recommendationHeader");
-  var recBodyDiv = document.getElementById("recommendationBody");
 
-  recDiv.style.display="block";
-  recHeaderDiv.style.display = "block";
-  recBodyDiv.style.display = "block";
+
   titleDiv.innerHTML = recommendation.title;
   descriptionDiv.innerHTML = recommendation.description;
+  recDiv.style.display="block";
+  recHeaderDiv.style.display = "block";
   titleDiv.style.display = "block";
   descriptionDiv.style.display = "block";
+  recDiv.scrollIntoView()
 
 }
