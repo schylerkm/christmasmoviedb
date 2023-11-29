@@ -4,23 +4,50 @@
   "private": true,
   "description": "christmas-movie-database",
   "author": "Schyler Manning",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.1.5",
-    "gatsby": "^4.24.7",
-    "gatsby-plugin-image": "^2.24.0",
-    "gatsby-plugin-mdx": "^4.3.0",
-    "gatsby-source-filesystem": "^4.24.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@docusaurus/core": "3.0.0",
+    "@docusaurus/preset-classic": "3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "ag-grid-community": "^28.2.1",
+    "ag-grid-react": "^28.2.0",
+    "clsx": "^1.2.1",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "indent-string": "^5.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-loader-spinner": "^5.3.4",
+    "sass": "^1.69.5",
+    "yarn": "^1.22.21"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.0.0",
+    "@docusaurus/types": "3.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }
