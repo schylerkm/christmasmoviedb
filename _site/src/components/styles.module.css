@@ -1,0 +1,76 @@
+.button {
+    background-color: white;
+    border: 2px solid;
+    border-radius: 12px;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    min-height: 20px;
+    padding: 16px 24px;
+    text-align: center;
+    font-size:calc(10px + 0.5vw);
+    margin-bottom: 16px;
+}
+.button-selected {
+    color: #f1dfdf;
+    cursor: pointer;
+    background-color: #dc5555;
+    display: inline-block;
+    line-height: normal;
+    min-height: 20px;
+    padding: 16px 24px;
+    text-align: center;
+    font-size:calc(10 px + 0.5vw);
+    border: 2px solid;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.heading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.heading-accent {
+    color: #bf1818;
+    font-family: sans-serif;
+}
+.quiz-question {
+    color: #05540a;
+    font-weight: bold;
+    font-size: 20;
+    width: 100%;
+    font-family: sans-serif;
+    clear: both;
+    margin-bottom: 10px;
+  }
+.movie-title{
+    color: #dc5555;
+    font-size: 20;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.movie-description{
+    font-size: 10;
+    font-family: sans-serif;
+}
+.recommendation {
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: none;
+    clear: both;
+    padding: 2rem;
+}
+.recommendation-header{
+    color: #222222;
+    font-weight: bold;
+    font-size: 20;
+    font-family: sans-serif;
+    display: none;
+    clear: both;
+    padding-bottom: 10px;
+}
+.page{
+    min-height: calc(100vh - 90px);
+}

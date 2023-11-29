@@ -1,0 +1,76 @@
+<div>
+    <nav>
+        <ul className={navLinks}>
+            <li className={navLinkItem}>
+                <Link to="/">
+                    <StaticImage
+                        className={navImage}
+                        alt="A black home button"
+                        src="../images/home.png"
+                        placeholder="Home"
+                    />
+                </Link>
+            </li>
+            <li className={navLinkItem}>
+                <Link to="/info">
+                    <StaticImage
+                        className={navImage}
+                        alt="A black info button"
+                        src="../images/info.png"
+                        placeholder="About"
+                    />
+                </Link>
+            </li>
+            <li className={navLinkItem}>
+                <Link to="/full-list">
+                    <StaticImage
+                        className={navImage}
+                        alt="A black list button"
+                        src="../images/list.png"
+                        placeholder="Full List"
+                    />
+                </Link>
+            </li>
+            <li className={navLinkItem}>
+                <Link to="https://github.com/schylerkm/christmasmoviedb">
+                    <StaticImage 
+                        className={navImage}
+                        alt="A black GitHub Octocat button"
+                        src="../images/github.png"
+                        placeholder="GitHub"
+                    />
+                </Link>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div className={Styles.page}>
+            <h1 className={Styles.heading}>About: </h1>
+            <div>My name is Schyler, I like Christmas</div>
+            <br></br>
+            <div>Inspiration for this site came from my friend Diane. Please check out her book recommendation site: </div>
+            <a href="https://bookrecommendermain.gtsb.io/">Book Recommender</a>
+            <br></br>
+            <br></br>
+            <div>This site was developed using{" "}
+                <a href="https://www.gatsbyjs.com/">Gatsby</a> and is hosted on Gatsby Cloud
+            </div>
+        </div>
+    </main>
+    <div id="footer" className={footer}>
+        <ul>
+            <li className={footerItem}>
+                <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons" className={footerItem}>Home button icons created by Freepik - Flaticon</a>
+            </li>
+            <li className={footerItem}>
+                <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Chanut - Flaticon</a>
+            </li>
+            <li className={footerItem}>
+                <a href="https://www.flaticon.com/free-icons/github" title="github icons" className={footerItem}>Github icons created by Freepik - Flaticon</a>
+            </li>
+            <li className={footerItem}>
+                <a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by Tempo_doloe - Flaticon</a>
+            </li>
+        </ul>
+    </div>
+</div>
