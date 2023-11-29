@@ -2,6 +2,7 @@ import React, { useCallback, useMemo, useRef, useState} from 'react';
 import { CirclesWithBar } from 'react-loader-spinner'
 import { AgGridReact } from 'ag-grid-react';
 import getFullMovieIndexData from './indexData.js';
+import JSONData from '../../../json/movies2.json'
 
 export default function FullMovieIndex() {
     const gridRef = useRef()
@@ -12,26 +13,47 @@ export default function FullMovieIndex() {
     //     Abroad: false,
     // });
 
-    const [columDefs, setColumnDefs] = useState([
+    const [columnDefs, setColumnDefs] = useState([
         {
-            headerName: 'Name',
-            field: 'name',
-            getQuickFilterText: params => {
-                return params.value.name;
-            },
-            wrapText: true,
+            headerName: 'Title',
+            field: 'title',
+            // getQuickFilterText: params => {
+            //     return params.value.name;
+            // },
+            // wrapText: true,
         },
         {
-            headerName: 'Description',
-            field: 'description',
+            headerName: 'Director',
+            field: 'director',
+            wrapText: true
+        },
+        // {
+        //     headerName: 'Description',
+        //     field: 'description',
+        //     wrapText: true
+        // },
+        {
+            headerName: 'Link',
+            field: 'link',
             wrapText: true
         },
 
     ]);
+
+    const defaultColDef = useMemo(() => {
+        return {
+            autoHeaderHeight: true,
+            autoHeight: true,
+            resizable: true,
+            sortable: true,
+            wrapHeaderText: true,
+        }
+    }, []);
     
     const onGridReady = useCallback((params) => {
         // isLoading();
-        setRowData(getFullMovieIndexData());
+        // setRowData(getFullMovieIndexData());
+        setRowData(JSONData);
     }, []);
 
     // const isLoading = useCallback(() => {
@@ -47,28 +69,30 @@ export default function FullMovieIndex() {
         gridRef.current.api.sizeColumnsToFit();
     }, []);
 
-    const loadingOverlayComponentParams = useMemo(() => {
-        return {
-            height: "100",
-            width: "100",
-            color: "#4fa94d",
-            ariaLabel: 'circles-with-bar-loading'
-        };
-    }, []);
+    // const loadingOverlayComponentParams = useMemo(() => {
+    //     return {
+    //         height: "100",
+    //         width: "100",
+    //         color: "#4fa94d",
+    //         ariaLabel: 'circles-with-bar-loading'
+    //     };
+    // }, []);
 
     return (
         <>
             <div className="table-wrapper">
-                <div className="ag-theme-material">
+                <div className="ag-theme-custom" >
                     <AgGridReact
                         ref={gridRef}
                         rowData={rowData}
-                        columnDefs={columDefs}
+                        columnDefs={columnDefs}
+                        defaultColDef={defaultColDef}
                         domLayout="autoHeight"
                         autoSizeAllColumns="true"
                         // loadingOverlayComponent={CirclesWithBar}
                         // loadingOverlayComponentParams={loadingOverlayComponentParams}
                         onGridReady={onGridReady}
+                        onFirstDataRendered={onFirstDataRendered}
                         style={{ width: '100%', height: '100%' }}
                     ></AgGridReact>
                 </div>

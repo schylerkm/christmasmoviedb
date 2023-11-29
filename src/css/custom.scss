@@ -1,5 +1,5 @@
 @import "ag-grid-community/src/styles/ag-grid.scss";
-@import "ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
+@import "ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin";
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -29,4 +29,18 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/** AG-GRID TABLE STYLE **/
+.ag-theme-custom {
+  @include ag-theme-alpine(
+    (
+    background-color: white,
+    header-background-color: #820000,
+    header-foreground-color: white,
+    header-cell-hover-background-color: #a33a3a,
+    secondary-foreground-color: #eee,
+    row-hover-color: #f0f5f0,
+    )
+  );
 }
